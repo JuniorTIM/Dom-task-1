@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super App</title>
+  </head>
+  <body>
+    <style>
+      .osnText {
+        border: 1px solid #dc143c;
+        border-radius: 7px;
+        width: 300px;
+        padding: 10px;
+        margin-left: 38%;
+        margin-top: 15%;
+      }
+
+      .block {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin: auto;
+        position: absolute;
+        top: 47%;
+        left: 39%;
+      }
+    </style>
+    <script>
+      const div1 = document.createElement("div");
+      div1.className = "osnText"
+      div1.textContent =
+        "Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Voluptatem incidunt cumque in! In, omnis repellendus";
+      document.body.prepend(div1);
+
+      const div2 = document.createElement("div");
+      div2.className = "block"
+      document.body.append(div2)
+
+      const l1 = document.createElement("a")
+      l1.textContent = "intocode"
+      l1.href = "https://intocode.ru/"
+      const l2 = document.createElement("a")
+      l2.textContent = "google"
+      l2.href = "https://google.com/"
+      const l3 = document.createElement("a")
+      l3.textContent = "instagram"
+      l3.href = "https://instagram.com/"
+
+      div2.append(l1, l2, l3)
+      
+    </script>
+  </body>
+</html>
